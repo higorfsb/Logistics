@@ -49,7 +49,7 @@ namespace Logistics.Application.v1.Controllers
             return Ok(await _occurrenceService.InsertOccurrence(ocurrence));
         }
 
-        [SwaggerOperation("Delete order by id")]
+        [SwaggerOperation("Delete occurrence by id")]
         [SwaggerResponse(StatusCodes.Status200OK, ReturnMessageOccurrence.MessageDeleteOccurrence, typeof(string))]
         [SwaggerResponse(StatusCodes.Status404NotFound, ReturnMessageOccurrence.MessageOccurrenceStatus, typeof(string))]
         [SwaggerResponse(StatusCodes.Status404NotFound, ReturnMessageOccurrence.MessageOccurenceNotFound, typeof(string))]
@@ -59,7 +59,7 @@ namespace Logistics.Application.v1.Controllers
             return Ok(await _occurrenceService.DeleteOccurrence(id));
         }
 
-        [SwaggerOperation("Update order by id")]
+        [SwaggerOperation("Update occurrence by id")]
         [SwaggerResponse(StatusCodes.Status200OK, ReturnMessageOccurrence.MessageUpdateOccurrence, typeof(string))]
         [SwaggerResponse(StatusCodes.Status404NotFound, ReturnMessageOrder.MessageOrderNotFound, typeof(string))]
         [SwaggerResponse(StatusCodes.Status404NotFound, ReturnMessageOccurrence.MessageOccurenceNotFound, typeof(string))]

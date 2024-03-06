@@ -28,6 +28,7 @@ namespace Logistics.Insfrastructure.Repositores
         public async Task<Ocorrencia> GetOccurrenceByIdObject(int id)
         {
             return await _context.Ocorrencia
+                .AsNoTracking()
                 .Where(x => x.Id == id)
                 .FirstOrDefaultAsync();
         }
