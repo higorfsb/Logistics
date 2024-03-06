@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistics.Application", "Logistics\Logistics.Application.csproj", "{967FF97E-BEC6-490E-9754-11CBA0CA020D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{8ACD276D-0387-4FA2-AEB9-664B39E1F853}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{35496AF4-CC6D-4376-B66D-91DE7C280196}"
@@ -17,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistics.Insfrastructure",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{84196E91-05D6-4052-976E-E5D4C93A31CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticsTests", "LogisticsTests\LogisticsTests.csproj", "{8E83F8E8-765B-4AAC-A8D6-D0C75B372066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticsTests", "LogisticsTests\LogisticsTests.csproj", "{8E83F8E8-765B-4AAC-A8D6-D0C75B372066}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistics.Application", "Logistics.Application\Logistics.Application.csproj", "{9AC7E54E-2C35-4326-8997-05F559259BBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{967FF97E-BEC6-490E-9754-11CBA0CA020D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{967FF97E-BEC6-490E-9754-11CBA0CA020D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{967FF97E-BEC6-490E-9754-11CBA0CA020D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{967FF97E-BEC6-490E-9754-11CBA0CA020D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E10BFE90-D4BC-4F3F-8072-6AA6BFCF045E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E10BFE90-D4BC-4F3F-8072-6AA6BFCF045E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10BFE90-D4BC-4F3F-8072-6AA6BFCF045E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,15 +37,19 @@ Global
 		{8E83F8E8-765B-4AAC-A8D6-D0C75B372066}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E83F8E8-765B-4AAC-A8D6-D0C75B372066}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E83F8E8-765B-4AAC-A8D6-D0C75B372066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC7E54E-2C35-4326-8997-05F559259BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC7E54E-2C35-4326-8997-05F559259BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC7E54E-2C35-4326-8997-05F559259BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC7E54E-2C35-4326-8997-05F559259BBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{967FF97E-BEC6-490E-9754-11CBA0CA020D} = {8ACD276D-0387-4FA2-AEB9-664B39E1F853}
 		{E10BFE90-D4BC-4F3F-8072-6AA6BFCF045E} = {35496AF4-CC6D-4376-B66D-91DE7C280196}
 		{A4425827-032C-4FCB-A7CF-86B8F73D849E} = {5730D6BC-AC6C-4C3B-92FA-0DFB6C615F2A}
 		{8E83F8E8-765B-4AAC-A8D6-D0C75B372066} = {84196E91-05D6-4052-976E-E5D4C93A31CE}
+		{9AC7E54E-2C35-4326-8997-05F559259BBA} = {8ACD276D-0387-4FA2-AEB9-664B39E1F853}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7598E730-F5ED-4B42-9C72-CE09054CC6F5}
