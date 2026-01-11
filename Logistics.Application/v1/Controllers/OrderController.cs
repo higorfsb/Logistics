@@ -20,7 +20,7 @@ namespace Logistics.Application.v1.Controllers
             _orderService = orderService;
         }
 
-        [SwaggerOperation("Returns a data base order by id")]
+        [SwaggerOperation("Returns a data base order by id teste")]
         [SwaggerResponse(StatusCodes.Status200OK, "", typeof(OrderResponse))]
         [SwaggerResponse(StatusCodes.Status404NotFound, ReturnMessageOrder.MessageOrderNotFound, typeof(string))]
         [HttpGet("{id}")]
